@@ -5,7 +5,7 @@ from django.utils import timezone
 # Create your models here
 class Specialization(models.Model):
     Animation = models.ImageField(upload_to='images/')
-    Title = models.CharField(max_length=10)
+    Title = models.CharField(max_length=20)
     Summary = models.CharField(max_length= 30)
     
     
@@ -16,8 +16,8 @@ class Specialization(models.Model):
     
     
 class Specialty(models.Model):
-    Title = models.CharField(max_length=20)
-    summary = models.CharField(max_length=30)
+    Title = models.CharField(max_length=50)
+    summary = models.CharField(max_length=50)
     
     
     def __str__(self):
@@ -26,10 +26,10 @@ class Specialty(models.Model):
     
     
 class Project(models.Model):
-    Title = models.CharField(max_length=10)
-    sub_title = models.CharField(max_length=10)
+    Title = models.CharField(max_length=50)
+    sub_title = models.CharField(max_length=50)
     Images = models.ImageField(upload_to='images/')
-    
+      
     
     def __str__(self):
         return self.Title
