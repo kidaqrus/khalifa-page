@@ -55,7 +55,7 @@ ROOT_URLCONF = 'mysite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': ["Kweb/templates/home.html"],
+        'DIRS': ["Kweb/templates/Kweb/home.html"],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
