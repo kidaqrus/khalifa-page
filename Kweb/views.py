@@ -5,4 +5,4 @@ from .models import Project
 
 def home(request):
     projects = Project.objects
-    return render(request, 'kweb/home.html', {'projects': projects})
+    return render(request, 'kweb/homes.html', {'projects': projects})
